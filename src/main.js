@@ -2,6 +2,7 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 import './assets/styles/global.scss'; // Import the SCSS file
+import FooterSection from './components/FooterSection.vue';
 
 // Import the components
 import MainPage from './views/MainPage.vue';
@@ -37,4 +38,5 @@ const router = createRouter({
 
 const app = createApp(App);
 app.use(router);
+app.component('FooterSection', FooterSection)
 app.mount('#app');

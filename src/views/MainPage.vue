@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <nav class="navbar">
+  
+    <nav class="navbar px-10 p-5">
       <ul>
         <li><router-link to="/#home">Home</router-link></li>
         <li><router-link to="/#projects">Projects</router-link></li>
@@ -9,34 +9,28 @@
       </ul>
     </nav>
 
-    <div class="container mx-auto px-10 p-5">
-    <HomeSection />
-
-    <section id="projects">
-      <h1>Projects</h1>
-      <p>Here are my web development projects.</p>
-    </section>
-
-    <section id="about">
-      <h1>About Me</h1>
-      <p>Learn about my background, skills, and experience.</p>
-    </section>
-
-    <section id="contact">
-      <h1>Contact Me</h1>
-      <p>Get in touch via this form.</p>
-    </section>
+    <div class="container mx-auto p-5">
+      <HomeSection />
+      <ProjectsSection />
+      <AboutSection />
+      <ContactSection />
     </div>
-  </div>
+  
 </template>
 
 <script>
 import HomeSection from '../components/HomeSection.vue';
+import ProjectsSection from '../components/ProjectsSection.vue';
+import AboutSection from '../components/AboutSection.vue';
+import ContactSection from '../components/ContactSection.vue';
 
 export default {
   name: 'MainPage',
   components: {
-    HomeSection
+    HomeSection,
+    ProjectsSection,
+    AboutSection,
+    ContactSection
   }
 };
 </script>
@@ -47,7 +41,6 @@ export default {
   top: 0;
   background-color: #333;
   z-index: 1000;  /* Ensure it sits above other content */
-  padding: 10px;
 }
 
 .navbar ul {
@@ -66,7 +59,7 @@ export default {
 }
 
 section {
-  min-height: 100vh;
+  min-height: 85vh;
   padding: 2rem;
   scroll-margin-top: 100px; /* Adjust for fixed header */
 }

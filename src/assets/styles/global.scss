@@ -11,4 +11,23 @@ html {
 h1 {
   font-size: 2em;
   font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ol, ul, menu {
+  list-style: initial;
+  margin: 5px 20px;
+  padding: initial;
+}
+
+a {
+  @apply text-yellow-800 hover:underline hover:text-yellow-900 transition-colors duration-200 ease-in-out font-semibold;
 }
