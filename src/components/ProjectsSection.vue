@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
       <h1>Featured Project</h1>
 
-      <fwb-accordion class="py-4">
+      <fwb-accordion :open-first-item="false" class="py-4">
         <fwb-accordion-panel>
           <fwb-accordion-header><h4>Office of the Vice President for Research, Scholarship, and Creative Endevors</h4></fwb-accordion-header>
           <fwb-accordion-content>
