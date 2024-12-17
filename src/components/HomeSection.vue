@@ -1,7 +1,7 @@
 <template>
   <section id="home">
   <h1>Jason Watson | Web Developer</h1>
-    <div class="grid grid-cols-2 gap-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
       <div class="home-copy">
         <p>
           I'm a seasoned web developer with 10 years of experience in higher education, specializing in WordPress and Drupal development. My expertise lies in creating scalable, maintainable solutions for content management systems, from large WordPress multisites with custom themes and plugins to bespoke Drupal 10 projects hosted on platforms like Pantheon.
@@ -73,15 +73,16 @@ export default {
 
 .logo {
   position: absolute;
-  width: 80px; /* Adjust as needed */
+  width: 65px; /* Adjust as needed */
   height: 80px;
   object-fit: contain;
 }
 
 .logo:nth-child(1) { top: -100px; left: 50%; transform: translateX(-50%); height: 100px; }
-.logo:nth-child(2) { top: 50%; left: -100px; transform: translateY(-50%); }
-.logo:nth-child(3) { bottom: -100px; left: 50%; transform: translateX(-50%); }
-.logo:nth-child(4) { top: 50%; right: -120px; transform: translateY(-50%); width: 100px; height: 150px; }
+.logo:nth-child(2) { top: 70%; left: -59px; transform: rotate(-130deg); }
+.logo:nth-child(3) { bottom: -90px; left: 50%; transform: translateX(-50%); }
+.logo:nth-child(4) { top: 50%; right: -100px; transform: translateY(-50%); width: 100px; height: 100px; }
+.logo:nth-child(5) { right: 290px; transform: rotate(-62deg); }
 
 @keyframes orbit {
   from { transform: rotate(0deg); }

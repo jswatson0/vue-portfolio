@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* or in your `app.css` file */
+@import '/node_modules/flowbite-vue/dist/index.css';
+
 // Your custom SCSS styles
 
 html {
@@ -30,4 +33,10 @@ ol, ul, menu {
 
 a {
   @apply text-yellow-800 hover:underline hover:text-yellow-900 transition-colors duration-200 ease-in-out font-semibold;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }
